@@ -1,0 +1,43 @@
+body{
+    background-color: rgb(210, 255, 152);
+}
+
+div{
+    margin-left: 25%;
+    font-style: italic;
+}
+
+table{
+    width: 50%;
+
+    border: 4px solid blue;
+    box-shadow: 10px 10px 0;
+
+    text-align: center;
+    font-size: 1.3em;
+    border-spacing: 0px;
+}
+
+th, td{
+    border: 1px solid green;
+    height: 75px;
+}
+
+th{
+    border-top: blue;
+    color: red;
+}
+
+.left{
+    border-left: blue;
+}
+
+.bottom{
+    color: blue;
+    border-bottom: blue;
+}
+
+.right{
+    border-right: blue;
+}
+

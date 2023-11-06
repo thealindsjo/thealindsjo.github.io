@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+    .parentAbsolute{
+        width:300px;
+        height:300px;
+        padding: 10px; /* liten padding (inre uttryme) */
+        border: solid green 3px; /* och solid svart ramlinje */
+    }
+
+    .relative1{
+        width:50px;
+        height:50px;
+        position:absolute;
+        border: solid black 3px; /* och solid svart ramlinje */
+        z-index:3;
+    }
+
+    .relative2{
+        width:50px;
+        height:50px;
+        position:absolute;
+        border: solid black 3px; /* och solid svart ramlinje */
+        z-index:2;
+    }
+
+    .relative3{
+        width:150px;
+        height:150px;
+        position:absolute;
+        border: solid black 3px; /* och solid svart ramlinje */
+        z-index:3;
+    }
+
+    .left{
+        float: left;
+    }
+
+    .parentAbsolute #right{
+        float: right;
+    }
+</style>
+</head>
+    <body>
+        <div class="parentAbsolute left">
+            <div class="relative1 left"><img src="flower1.jpg"/></div>
+            <div class="relative2 left"><img src="flower2.jpg"/></div>
+            <div class="relative3 left"><img src="flower3.jpg"/></div>
+        </div>
+        <div class="parentAbsolute" id="right">
+            <div class="relative1 right"><img src="flower1.jpg"/></div>
+            <div class="relative2 right"><img src="flower2.jpg"/></div>
+            <div class="relative3 right"><img src="flower3.jpg"/></div>
+        </div>
+    </body>
+</html>
+
+

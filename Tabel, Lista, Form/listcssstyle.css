@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(210, 255, 152);
+}
+
+h1{
+    margin-left: 2%;
+}
+
+ol, dl, ul{
+    border: solid blue;
+}
+
+#roman{
+    list-style-type: upper-roman;
+}
+
+dl{
+    background-color: white;
+    color: blueviolet;
+}
+
+#none{
+    list-style-type: none;
+}
+
+ul{
+    list-style-type: square;
+}

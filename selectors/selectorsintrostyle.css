@@ -1,0 +1,43 @@
+body{
+    color: red;
+}
+
+div{
+    color: black;
+    border: solid red;
+}
+
+div::first-letter{
+    font-size: 2em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p{
+    color: black;
+    font-weight: bold;
+}
+
+details{
+    color: black;
+}
+
+li:first-child{
+    border: dashed blue;
+}
+
+li:nth-child(3){
+    color: red;
+}
+
+#underline{
+    text-decoration: underline;
+}
+
+li:nth-child(10){
+    border: solid black;
+}
+
+li:nth-child(12){
+    color: green;
+    text-decoration: line-through;
+}

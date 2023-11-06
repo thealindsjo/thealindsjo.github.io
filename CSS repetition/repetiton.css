@@ -1,0 +1,15 @@
+#rubrik{
+    text-align: center;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.caps{
+    text-transform: capitalize;
+}
+
+#lightgreen{
+    background-color: rgb(198, 255, 113);
+}
