@@ -1,0 +1,267 @@
+/* Teckensnitt */
+@font-face {
+  font-family: 'Lora', serif;
+  src: url(./Font/Lora-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Nanum Myeongjo', serif;
+  src: url(./FontNanumMyengjo-Regular-ttf);
+}
+
+/* Globala stilar */
+* {
+  box-sizing: border-box;
+  font-family: 'Nanum Myeongjo', serif;
+}
+
+body {
+  background-color: rgb(200, 120, 85) !important;
+  margin: 15px 60px !important;
+  line-height: 1.4;
+}
+
+/* Länkar och rubriker */
+a {
+  font-family: "Roboto Slab", serif;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Lora', serif;
+}
+
+/* Layout och styling för element */
+div, a, section {
+  border-radius: 10px;
+}
+
+.background-div {
+  background-color: #ddd;
+}
+
+/* Navigationsmeny */
+header div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.left_nav {
+  width: auto;
+}
+
+.right_nav {
+  justify-content: flex-end;
+  width: auto;
+}
+
+.right_nav div{
+  margin-left: 30px;
+}
+
+.nav_ {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+/* Menylänkar */
+header a {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  color: #333;
+  text-transform: uppercase;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+/* Hover-effekter och aktiva länkar */
+.box-shadow {
+  box-shadow: 5px 5px rgb(160, 95, 75);
+}
+
+header a:hover {
+  box-shadow: 10px 10px rgb(125, 74, 58);
+}
+
+.here {
+  font-weight: bold;
+  background-color: #bababa;
+}
+
+/* Huvudsektionens layout */
+.middle_container {
+  display: flex;
+}
+
+img {
+  display: block;
+  max-width: 50%;
+  margin: 10px;
+  border: solid #333 3px;
+  border-radius: 10px;
+}
+
+.map {
+  border: solid #7d7d7d 2px;
+}
+
+.side_container {
+  flex: 1;
+  padding: 15px;
+}
+
+/* Knappens stil */
+button {
+  background: #333;
+  color: #fff;
+  padding: 10px;
+  border: 0;
+  border-radius: 25px;
+}
+
+button:hover {
+  background-color: rgb(146, 73, 60);
+}
+
+/* Flexbox-styling för boxar */
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.box {
+  flex: 1;
+  min-width: 150px;
+  text-align: center;
+  padding: 25px;
+}
+
+/* Input och layoutjusteringar */
+input {
+  margin-bottom: 15px;
+  width: 80%;
+  max-width: 147px;
+}
+
+.margin_0 {
+  margin: 0;
+}
+
+.margin_bottom{
+  margin-bottom: 30px;
+}
+
+.padding_0 {
+  padding: 0;
+}
+
+.text_start{
+  text-align: start;
+}
+
+#message {
+  max-width: 300px;
+  width: 80%;
+  height: 150px;
+}
+
+/* Galleri */
+.gallery_container .gallery_item{
+  margin-left: -10px;
+  margin-right: 10px;
+}
+
+.gallery_item{
+  flex: 1;
+}
+
+.box-img {
+  width: 100%; /* Gör bilden responsiv */
+  max-width: 1000px;
+  min-width: 200px;
+  height: auto;
+  display: block;
+  object-fit: cover; /* Gör så att bilden behåller sitt förhållande och fyller sin container */
+  border-radius: 10px; 
+}
+
+/* Meny för små skärmar */
+.hamburger {
+  display: none; /* Döljer hamburgermenyn på större skärmar */
+}
+
+/* Responsiv design */
+@media (max-width: 1025px) {
+  .box h2 {
+    font-size: 1.1rem; /* Justerar storleken på rubriker */
+  }
+
+  .box p {
+    font-size: 0.8rem; /* Justerar storleken på text */
+  }
+}
+
+@media (max-width: 860px) {
+  .middle_container img, .text_start img {
+    display: none; /* Döljer bilder för att spara utrymme */
+  }
+
+  .side_container {
+    flex: 10; /* Justerar layout */
+  }
+}
+
+/* Anpassningar för små skärmar */
+@media (max-width: 550px) {
+  .hamburger {
+    display: flex; /* Gör hamburgermenyn synlig */
+    padding: 10px;
+  }
+
+  header div {
+    flex-direction: column; /* Ändrar riktningen till kolumn */
+  }
+
+  .menu {
+    display: none; /* Döljer menyn som standard */
+    flex-direction: column; /* Gör menyn vertikal */
+  }
+  
+  .menu.active {
+    display: flex; /* Visar menyn när aktiv */
+  }
+  
+  .left_nav, .right_nav {
+    flex-direction: column; 
+    width: 100%; 
+  }
+
+  .left_nav a {
+    width: 100%; /* Gör länkar full bredd */
+  }
+
+  header a {
+    margin: 5px 0; 
+  }
+
+  .right_nav div{
+    margin-left: 0;
+  }
+
+  .display_none{
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    margin: 8px 20px; /* Justerar marginaler för mindre skärmar */
+  }
+
+  .boxes-column {
+    flex-direction: column; /* Gör boxarna vertikala */
+  }
+}

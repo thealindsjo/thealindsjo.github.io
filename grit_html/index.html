@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Business</title>
+    <link rel="stylesheet" href="Css/style.css" />
+    <link rel="shortcut icon" href="Media/images.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <script>
+      function toggleMenu() {
+      console.log("Toggle menu clicked");
+      const menu = document.querySelector('.menu');
+      menu.classList.toggle('active');
+      }
+    </script>
+  </head>
+
+  <body>
+      <main>
+        <header>
+          <nav>
+            <div class="nav_">
+              <div class="hamburger" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+              </div>
+              <div class="menu">
+                <div class="left_nav">
+                  <a href="index.html" class="here box-shadow">Home</a>
+                </div>
+                <div class="right_nav">
+                  <div><a href="about.html" class="box-shadow background-div">About</a></div>
+                  <div><a href="gallery.html" class="box-shadow background-div">Gallery</a></div>
+                  <div><a href="contact.html" class="box-shadow background-div">Contact</a></div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </header>
+      
+        <section class="middle_container box-shadow background-div margin_bottom">
+          <img src="Media/e6707f30-7824-4a42-b09d-700c29d32acf.jpeg" alt="lightbulb on blackboard" />
+          <div class="side_container">
+            <h1>Your Business On the Web</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat aliquam enim quia. Quidem nam commodi dolore officiis aliquam et alias repellendus optio sunt deleniti magnam eligendi id, minus ducimus amet adipisci tempora perspiciatis. Praesentium animi in odio minus enim iste excepturi impedit quos eum quod minima a quisquam laboriosam fugiat ullam hic alias quam.</p>
+            <button>Read More</button>
+          </div>
+        </section>
+  
+        <section class="boxes">
+          <div class="box box-shadow background-div">
+            <i class="fas fa-chart-line fa-2x"></i>
+            <h2>Analytics</h2>
+            <p>Lorem ipsum.</p>
+          </div>
+          <div class="box box-shadow background-div">
+            <i class="fas fa-bullhorn fa-2x"></i>
+            <h2>Marketing</h2>
+            <p>Lorem ipsum.</p>
+          </div>
+          <div class="box box-shadow background-div">
+            <i class="fas fa-database fa-2x"></i>
+            <h2>Development</h2>
+            <p>Lorem ipsum.</p>
+          </div>
+          <div class="box box-shadow background-div">
+            <i class="fas fa-user-group fa-2x"></i>
+            <h2>Support</h2>
+            <p>Lorem ipsum.</p>
+          </div>
+        </section>
+    </main>
+  </body>
+</html>

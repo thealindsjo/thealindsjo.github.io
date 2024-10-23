@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <link rel="stylesheet" href="Css/style.css" />
+    <link rel="shortcut icon" href="Media/images.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <script>
+      function toggleMenu() {
+        const menu = document.querySelector('.menu');
+        menu.classList.toggle('active');
+      }
+    </script>
+  </head>
+  
+  <body>
+    <main>
+      <header>
+        <nav>
+          <div class="nav_">
+            <div class="hamburger" onclick="toggleMenu()">
+              <i class="fas fa-bars"></i>
+            </div>
+            <div class="menu">
+              <div class="left_nav">
+                <a href="index.html" class=" box-shadow background-div">Home</a>
+              </div>
+              <div class="right_nav">
+                  <div><a href="about.html" class="box-shadow background-div">About</a></div>
+                  <div><a href="gallery.html" class="here box-shadow background-div">Gallery</a></div>
+                  <div><a href="contact.html" class="box-shadow background-div">Contact</a></div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+  
+      <div class="gallery_container">
+        <div class="box-shadow background-div box margin_bottom">
+          <h1>Gallery</h1>
+          <div class="display_none">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, perspiciatis obcaecati? Molestiae eveniet recusandae fuga perferendis voluptatem dolorem ut quod ea, ipsum vero neque quasi dolores pariatur similique dolor velit aperiam, officiis mollitia nihil deleniti enim impedit illum odit! Ex sint necessitatibus sequi labore saepe aliquam repudiandae deleniti perspiciatis consequatur!
+            </p>
+          </div>
+        </div>
+        <div class="boxes">
+          <div class="gallery_item">
+            <img class="box-img padding_0 box-shadow" src="Media/d3c0774c-c012-4b38-8aba-52750a5bd47e.jpeg" alt="Image 1">
+          </div>
+          <div class="gallery_item">
+            <img class="box-img padding_0 box-shadow" src="Media/ab956736-9fd0-4acb-909e-ca2df5a4f01c.jpeg" alt="Image 2">
+          </div>
+          <div class="gallery_item">
+            <img class="box-img padding_0 box-shadow" src="Media/6a00ed9c-2371-41d3-833b-dc22906cf763.jpeg" alt="Image 3">
+          </div>
+          <div class="gallery_item">
+            <img class="box-img padding_0 box-shadow" src="Media/_.jpeg" alt="Image 4">
+          </div>
+          <div class="gallery_item">
+            <img class="box-img padding_0 box-shadow" src="Media/FB.jpeg" alt="Image 5">
+          </div>
+          <div class="gallery_item">
+            <img class="box-img padding_0 box-shadow" src="Media/7a86c0d8-77e0-4a37-bc30-e680ef46b5a8.jpeg" alt="Image 6">
+          </div>
+          <div class="gallery_item">
+            <img class="box-img padding_0 box-shadow" src="Media/61547b7c-c5e5-4105-ab98-cb169db78a39.jpeg" alt="Image 7">
+          </div>
+          <div class="gallery_item">
+            <img class="box-img padding_0 box-shadow" src="Media/fd966a60-822d-4f34-a9e6-53b173e51da0.jpeg" alt="Image 8">
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="Css/style.css" />
+  <link rel="shortcut icon" href="Media/images.png" />
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+    />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <script>
+    function toggleMenu() {
+      const menu = document.querySelector('.menu');
+      menu.classList.toggle('active');
+    }
+  </script>
+</head>
+<body>
+  <main>
+    <header>
+      <nav>
+        <div class="nav_">
+          <div class="hamburger" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+          </div>
+          <div class="menu">
+            <div class="left_nav">
+              <a href="index.html" class="box-shadow background-div">Home</a>
+            </div>
+            <div class="right_nav">
+              <div><a href="about.html" class="box-shadow background-div">About</a></div>
+              <div><a href="gallery.html" class="box-shadow background-div">Gallery</a></div>
+              <div><a href="contact.html" class=" here box-shadow background-div">Contact</a></div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+  
+    <div>
+      <div class="box-shadow background-div box margin_bottom">
+        <h1>Contact us</h1>
+        <div class="display_none">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, perspiciatis obcaecati? Molestiae eveniet recusandae fuga perferendis voluptatem dolorem ut quod ea, ipsum vero neque quasi dolores pariatur similique dolor velit aperiam, officiis mollitia nihil deleniti enim impedit illum odit! Ex sint necessitatibus sequi labore saepe aliquam repudiandae deleniti perspiciatis consequatur!
+          </p>
+        </div>
+      </div>
+      <div class="boxes boxes-column">
+        <div class="box text_start box-shadow background-div">
+            <h2 class="margin_0">Quick Contact</h2>
+            <br>
+  
+            <div>
+              <form action="mailto:example@example.com" method="post" enctype="text/plain">
+                <div>
+                <label for="namn">Namn:</label>
+                <br>
+                <input type="name" id="name" name="name">
+                </div>
+                <div>
+                <label for="email">Email:</label>
+                <br>
+                <input type="email" id="email" name="email">
+                </div>
+                <div>
+                <label for="tel">Phone number:</label>
+                <br>
+                <input type="tel" id="tel" name="tel">
+                </div>
+                <div>
+                <label for="file">Upload file:</label>
+                <input type="file" id="file" name="file">
+                </div>
+                <div>
+                <label for="message">Message:</label>
+                <br>
+                <input type="text" id="message" name="message">
+                </div>
+                <div>
+                <button>Submit</button>
+                <button>Reset</button>
+                </div>
+            </div>
+        </div>
+  
+        <div class="box text_start box-shadow background-div">
+          <h2 class="margin_0">Contact information</h2>
+            <h3 class="margin_0">Address</h3>
+            <p class="margin_0">Storgatan 45, 114 56 Stockholm, Sverige</p>
+            <img src="Media/Premium Vector _ Street map with pin and routes.jpeg" alt="map" class="map">
+            <br>
+            <h3 class="margin_0">Email address</h3>
+            <p class="margin_0">info@skylinesolutions.se</p>
+            <br>
+            <h3 class="margin_0">Phone number</h3>
+            <p class="margin_0">070-020-7450</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            document.getElementById('thanksMessage').style.display = 'block';
+            console.log("Form submitted!");
+        });
+    </script>
+  </main>
+</body>
+</html>
